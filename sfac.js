@@ -24,4 +24,4 @@ message.channel.send(e);
 
 });
 
-bot.login(settings.token)
+bot.login(process.env.TOKEN)
