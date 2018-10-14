@@ -1,0 +1,14 @@
+{
+  "name": "stupidfactions",
+  "version": "1.0.0",
+  "description": "A Discord bot",
+  "main": "sfac.js",
+  "scripts": {
+    "start": "node sfac.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "snekfetch": "^4.0.0"
+  }
+}
+
