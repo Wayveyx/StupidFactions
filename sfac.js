@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const pfix = 'SF;';
 
 bot.on("ready", () => {
-bot.user.setActivity(`Factions?`);
+bot.user.setActivity(`Factions | sf;help`);
 console.log(`Factions?`);
 });
 
