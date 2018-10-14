@@ -5,7 +5,7 @@ exports.run = async (bot, message, args, tools) => {
 let facs = message.guild.roles.filter(role => role.name.startsWith('⚔'));
 let str = args.join(" ");
 let role = facs.find(role => role.name.slice(2).toLowerCase() === str.toLowerCase());
-if(message.member.roles.filter(r => r.name.startsWith('⚔')).size < 0) return message.channel.send('Please leave the faction you\'re in first.');
+if(message.member.roles.filter(r => r.name.startsWith('⚔')).size > 0) return message.channel.send('Please leave the faction you\'re in first.');
 
 try{
 await message.member.addRole(role);
