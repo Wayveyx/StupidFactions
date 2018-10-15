@@ -19,7 +19,7 @@ try{
 let commandFile = require(`./commands/${cmd}.js`);
 commandFile.run(bot, message, args);
 } catch(e) {
-message.channel.send(e);
+message.channel.send(e.message);
 }
 
 });
