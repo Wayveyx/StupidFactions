@@ -12,7 +12,7 @@ name:`⚔ ${args.join(" ")}`
 });
 message.channel.send('Faction Created.');
 } catch(e) {
-message.channel.send(e)
+message.channel.send(e.message)
 }
 
 }
