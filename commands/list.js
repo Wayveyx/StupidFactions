@@ -12,7 +12,7 @@ let role = facs.find(role => role.name.slice(1).toLowerCase() === str.toLowerCas
 
 if(!str) return message.channel.send(new Discord.RichEmbed()
 .setTitle('Factions')
-.setDescription(facs.join("\n"))
+.setDescription(facs.array().filter(r => r.name).join("\n"))
 .setColor('#FFA500')
 .setFooter('Faction List ⚔'));
 if(!role) return message.channel.send(new Discord.RichEmbed()
