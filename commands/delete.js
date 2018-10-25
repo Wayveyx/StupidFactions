@@ -11,6 +11,11 @@ if(facs.size < 1) return message.channel.send(new Discord.RichEmbed()
 let str = args.join(" ");
 let role = facs.find(role => role.name.slice(1).toLowerCase() === str.toLowerCase());
 
-role.delete();
-message.channel.send('Deleted the faction.');
+  try{
+    role.delete();
+    message.channel.send('Faction Deleted.');
+  } catch (e) {
+    message.channel.send(e.message);
+  }    
+
 }
